@@ -32,16 +32,80 @@ article.text-container h1 {
 }
 article.text-container p {
   opacity: 0.8;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 100;
 }
 .btn {
   padding: 0.5rem 1.5rem;
   font-weight: 800;
-  background: linear-gradient(120deg, #fef260 86%, #2f6bdd 90%);
+  background: linear-gradient(140deg, #fef260 86%, #2f6bdd 90%);
+}
+article.text-container .btn:hover {
+  transform: scale(1.1);
 }
 .hero img {
   width: 100%;
   transform: translateY(1%);
 }
 /* HEADER SECTION CSS END */
+
+/****** POSTS SECTION START ******/
+
+/* POSTS SECTION BUTTONS START*/
+div.btn-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+}
+div.btn-container button.btn {
+  background: #fff;
+  border: 1px solid #ececec;
+  border-radius: 3px;
+}
+div.btn-container .btn:last-child {
+  background: #fef260;
+}
+/* POSTS SECTION BUTTONS END */
+
+#posts article.hero {
+  padding: 1rem 0rem;
+  background-color: #fafafa;
+  border: 1px solid #e5e5e5;
+  color: initial;
+}
+#posts article.hero img {
+  width: initial;
+}
+
+#posts article.text-container {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  text-align: initial;
+  gap: 10px;
+}
+#posts article.text-container .btn {
+  background: #fff;
+  align-self: start;
+  margin-left: 0.5rem;
+  border: 2px solid #9d9d9d;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+}
+
+#posts article.text-container .btn:hover {
+  transform: scale(1);
+  /* cancelled transform */
+}
+
+div.timeAndcomment-icons {
+  width: 80%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+/******* POSTS SECTION END *******/
