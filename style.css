@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #fff;
+}
+/* HEADER SECTION CSS START */
+header {
+  width: 100%;
+  margin: auto;
+}
+article.hero {
+  background-color: #123;
+  width: 100%;
+  border-radius: 10px;
+  margin: auto;
+  color: #ffffff;
+  padding: 3rem;
+  padding-bottom: 0;
+}
+article.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+article.text-container h1 {
+  font-size: 1.3rem;
+}
+article.text-container p {
+  opacity: 0.8;
+  font-size: 1.1rem;
+  font-weight: 100;
+}
+.btn {
+  padding: 0.5rem 1.5rem;
+  font-weight: 800;
+}
+.hero img {
+  width: 100%;
+}
+/* HEADER SECTION CSS END */
