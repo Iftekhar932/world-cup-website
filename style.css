@@ -13,12 +13,11 @@ header {
 }
 article.hero {
   background-color: #123;
-  width: 100%;
   border-radius: 10px;
-  margin: auto;
   color: #ffffff;
   padding: 3rem;
   padding-bottom: 0;
+  margin: 1rem;
 }
 article.text-container {
   display: flex;
@@ -39,8 +38,10 @@ article.text-container p {
 .btn {
   padding: 0.5rem 1.5rem;
   font-weight: 800;
+  background: linear-gradient(120deg, #fef260 86%, #2f6bdd 90%);
 }
 .hero img {
   width: 100%;
+  transform: translateY(1%);
 }
 /* HEADER SECTION CSS END */
