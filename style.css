@@ -6,10 +6,15 @@
 body {
   background-color: #fff;
 }
+footer,
+section {
+  margin: 2rem 0;
+}
 /* HEADER SECTION CSS START */
 header {
   width: 100%;
   margin: auto;
+  margin-bottom: 1rem;
 }
 article.hero {
   background-color: #123;
@@ -27,6 +32,15 @@ article.text-container {
   text-align: center;
   gap: 10px;
 }
+article.text-container .text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  gap: 10px;
+}
+
 article.text-container h1 {
   font-size: 1.3rem;
 }
@@ -51,85 +65,14 @@ article.text-container .btn:hover {
 
 /****** POSTS SECTION START ******/
 
-/* POSTS SECTION BUTTONS START*/
-div.btn-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 13px;
+/* CSS FOR IPAD */
+@media (min-width: 768px) {
+  article.text-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
 }
-div.btn-container button.btn {
-  background: #fff;
-  border: 1px solid #ececec;
-  border-radius: 3px;
-}
-div.btn-container .btn:last-child {
-  background: #fef260;
-}
-/* POSTS SECTION BUTTONS END */
-
-#posts article.hero {
-  padding: 1rem 0rem;
-  background-color: #fafafa;
-  border: 1px solid #e5e5e5;
-  color: initial;
-}
-#posts article.hero img {
-  width: initial;
-}
-
-#posts article.text-container {
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: center;
-  align-items: center;
-  text-align: initial;
-  gap: 10px;
-}
-#posts article.text-container .btn {
-  background: #fff;
-  align-self: start;
-  margin-left: 0.5rem;
-  border: 2px solid #9d9d9d;
-  border-radius: 3px;
-  padding: 0.5rem 1rem;
-}
-
-#posts article.text-container .btn:hover {
-  transform: scale(1);
-  /* cancelled transform */
-}
-
-div.timeAndcomment-icons {
-  width: 80%;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  gap: 1rem;
-}
-/******* POSTS SECTION END *******/
-
-/* FOOTER SECTION CSS START */
-footer {
-  background-color: #123;
-}
-footer h1 {
-  border-bottom: 0.1px solid #5b5b5b;
-  width: 90%;
-  margin-left: 1rem;
-}
-article.individual-design span {
-  padding: 1rem;
-  color: #777b7f;
-  font-weight: 700;
-}
-.individual-design {
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-}
-/* FOOTER SECTION CSS END */
