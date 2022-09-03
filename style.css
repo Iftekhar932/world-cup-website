@@ -82,15 +82,16 @@ article.text-container .btn:hover {
   align-items: center;
   padding: 1rem;
   border-radius: 5px;
-  gap: 10px;
+  gap: 1.5rem;
   margin-bottom: 1rem;
 }
 .buttons .btn {
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 3rem;
   font-weight: 800;
   border: 1px solid rgb(238, 241, 236);
   background: #fff;
   border-radius: 5px;
+  width: 200px;
 }
 .buttons .btn:last-child {
   background: linear-gradient(140deg, #fef260 86%, #2f6bdd 90%);
@@ -138,12 +139,8 @@ article.text-container .btn:hover {
 /****** FOOTER SECTION START ******/
 footer {
   background-color: #123;
-  position: relative;
-  top: 0;
-  left: 0;
-  padding: 5rem;
+  padding: 5rem 0 2rem;
   color: white;
-  width: 100%;
   margin: 0;
 }
 footer div.container {
@@ -152,12 +149,16 @@ footer div.container {
   align-items: center;
   justify-content: center;
   width: 100%;
-  /* fix it ****************************************************************** */
 }
 footer h1 {
   border-bottom: 0.1px solid #dbdbdb;
+  padding: 0 0 0.5rem;
+  width: 80%;
+  text-align: center;
+  margin: auto;
 }
 footer span {
+  padding: 0.8rem;
   color: #a9a9a9;
 }
 
@@ -183,6 +184,18 @@ footer span {
     gap: 1rem;
   }
   /* CSS FOR POSTS SECTION */
+
+  /* FOOTER SECTION START */
+  footer div.container {
+    flex-direction: row;
+    width: 50%;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+  footer h1 {
+    border-bottom: none;
+  }
+  /* FOOTER SECTION END */
 }
 
 @media (min-width: 1280px) {
@@ -197,5 +210,10 @@ footer span {
   }
   .articles {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  /* FOOTER SECTION START */
+  footer div.container {
+    width: 100%;
   }
 }
