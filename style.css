@@ -22,7 +22,7 @@ header {
   margin: auto;
   margin-bottom: 1rem;
 }
-article.hero {
+header article.hero {
   background-color: #123;
   border-radius: 10px;
   color: #ffffff;
@@ -38,7 +38,7 @@ article.text-container {
   text-align: center;
   gap: 10px;
 }
-article.text-container .text-container {
+header article.text-container .text-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -73,13 +73,17 @@ article.text-container .btn:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
 }
 .buttons {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
+  border-radius: 5px;
   gap: 10px;
+  margin-bottom: 1rem;
 }
 .buttons .btn {
   padding: 0.5rem 1.5rem;
@@ -91,7 +95,24 @@ article.text-container .btn:hover {
 .buttons .btn:last-child {
   background: linear-gradient(140deg, #fef260 86%, #2f6bdd 90%);
 }
-
+.posts-container .text-container {
+  border: 0.1px solid #dbdbdb;
+  border-radius: 13px;
+  gap: 1rem;
+  width: 313px;
+  padding-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.posts-container .text-container p {
+  font-weight: 600;
+}
+.icon-container {
+  display: flex;
+  gap: 2rem;
+}
 /****** POSTS SECTION END ******/
 
 /* CSS FOR IPAD */
@@ -100,8 +121,25 @@ article.text-container .btn:hover {
   article.text-container {
     flex-direction: row;
   }
+
+  /* CSS FOR HEADER SECTION */
+
+  /* CSS FOR POSTS SECTION */
+
   .buttons {
     display: flex;
     flex-direction: row;
+  }
+  /* CSS FOR POSTS SECTION */
+}
+
+@media (min-width: 1280px) {
+  /* CSS FOR POSTS SECTION */
+  .posts-container {
+    flex-direction: row;
+  }
+  .buttons {
+    flex-direction: column;
+    background-color: #123;
   }
 }
