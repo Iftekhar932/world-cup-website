@@ -109,3 +109,25 @@ div.timeAndcomment-icons {
   gap: 1rem;
 }
 /******* POSTS SECTION END *******/
+
+/* FOOTER SECTION CSS START */
+footer {
+  background-color: #123;
+}
+footer h1 {
+  border-bottom: 0.1px solid #5b5b5b;
+  width: 90%;
+  margin-left: 1rem;
+}
+article.container span {
+  padding: 1rem;
+}
+.container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+/* FOOTER SECTION CSS END */
