@@ -128,13 +128,39 @@ article.text-container .btn:hover {
 }
 .icon-container {
   display: flex;
-  margin-left: 1.5rem;
   align-self: flex-start;
+
+  margin-left: 1.5rem;
   gap: 2rem;
 }
 /****** POSTS SECTION END ******/
 
 /****** FOOTER SECTION START ******/
+footer {
+  background-color: #123;
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 5rem;
+  color: white;
+  width: 100%;
+  margin: 0;
+}
+footer div.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* fix it ****************************************************************** */
+}
+footer h1 {
+  border-bottom: 0.1px solid #dbdbdb;
+}
+footer span {
+  color: #a9a9a9;
+}
+
 /****** FOOTER SECTION END ******/
 
 /* CSS FOR IPAD */
