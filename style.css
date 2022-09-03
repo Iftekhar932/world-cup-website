@@ -10,6 +10,12 @@ footer,
 section {
   margin: 2rem 0;
 }
+.btn {
+  padding: 0.5rem 1.5rem;
+  font-weight: 800;
+  background: linear-gradient(140deg, #fef260 86%, #2f6bdd 90%);
+  border: 1px solid rgb(238, 241, 236);
+}
 /* HEADER SECTION CSS START */
 header {
   width: 100%;
@@ -49,10 +55,8 @@ article.text-container p {
   font-size: 1rem;
   font-weight: 100;
 }
-.btn {
-  padding: 0.5rem 1.5rem;
-  font-weight: 800;
-  background: linear-gradient(140deg, #fef260 86%, #2f6bdd 90%);
+header .btn {
+  border: 0px;
 }
 article.text-container .btn:hover {
   transform: scale(1.1);
@@ -64,15 +68,40 @@ article.text-container .btn:hover {
 /* HEADER SECTION CSS END */
 
 /****** POSTS SECTION START ******/
+.posts-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.buttons .btn {
+  padding: 0.5rem 1.5rem;
+  font-weight: 800;
+  border: 1px solid rgb(238, 241, 236);
+  background: #fff;
+  border-radius: 5px;
+}
+.buttons .btn:last-child {
+  background: linear-gradient(140deg, #fef260 86%, #2f6bdd 90%);
+}
+
+/****** POSTS SECTION END ******/
 
 /* CSS FOR IPAD */
 @media (min-width: 768px) {
+  /* CSS FOR HEADER SECTION */
   article.text-container {
+    flex-direction: row;
+  }
+  .buttons {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 10px;
   }
 }
