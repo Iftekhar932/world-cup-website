@@ -119,10 +119,12 @@ footer h1 {
   width: 90%;
   margin-left: 1rem;
 }
-article.container span {
+article.individual-design span {
   padding: 1rem;
+  color: #777b7f;
+  font-weight: 700;
 }
-.container {
+.individual-design {
   color: white;
   display: flex;
   flex-direction: column;
