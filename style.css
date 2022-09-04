@@ -11,10 +11,16 @@ section {
   margin: 2rem 0;
 }
 .btn {
+  border-radius: 4px;
   padding: 0.5rem 1.5rem;
   font-weight: 800;
   background: linear-gradient(140deg, #fef260 86%, #2f6bdd 90%);
   border: 1px solid rgb(238, 241, 236);
+}
+a {
+  text-decoration: none;
+  border-radius: 5px;
+  color: black;
 }
 /* HEADER SECTION CSS START */
 header {
@@ -85,6 +91,7 @@ article.text-container .btn:hover {
   gap: 1.5rem;
   margin-bottom: 1rem;
 }
+
 .buttons .btn {
   padding: 0.5rem 3rem;
   font-weight: 800;
@@ -93,8 +100,11 @@ article.text-container .btn:hover {
   border-radius: 5px;
   width: 200px;
 }
-.buttons .btn:last-child {
+.buttons .btn {
   background: linear-gradient(140deg, #fef260 86%, #2f6bdd 90%);
+}
+.buttons a:last-child {
+  background: white;
 }
 .articles {
   display: grid;
@@ -135,7 +145,10 @@ article.text-container .btn:hover {
   gap: 2rem;
 }
 /****** POSTS SECTION END ******/
-
+/* CSS FOR BUTTON IN MAIN SECTION  */
+button.active {
+  display: none;
+}
 /****** FOOTER SECTION START ******/
 footer {
   background-color: #123;
@@ -184,6 +197,11 @@ footer span {
     gap: 1rem;
   }
   /* CSS FOR POSTS SECTION */
+
+  /* CSS FOR BUTTON IN MAIN SECTION  */
+  button.active {
+    display: block;
+  }
 
   /* FOOTER SECTION START */
   footer div.container {
