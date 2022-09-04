@@ -186,6 +186,7 @@ footer span {
 footer .icon-container {
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
 
 footer .icon-container a i {
