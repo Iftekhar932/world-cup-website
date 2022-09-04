@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/******** CSS USED EVERYWHERE ********/
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Noto Sans Mono";
 }
 body {
   background-color: #fff;
@@ -22,7 +25,7 @@ a {
   border-radius: 5px;
   color: black;
 }
-/* HEADER SECTION CSS START */
+/******** HEADER SECTION CSS START ********/
 header {
   width: 100%;
   margin: auto;
@@ -71,9 +74,9 @@ article.text-container .btn:hover {
   width: 100%;
   transform: translateY(1%);
 }
-/* HEADER SECTION CSS END */
+/******** HEADER SECTION CSS END ********/
 
-/****** POSTS SECTION START ******/
+/******************** POSTS SECTION START **************/
 .posts-container {
   display: flex;
   flex-direction: column;
@@ -103,6 +106,9 @@ article.text-container .btn:hover {
 .buttons .btn {
   background: linear-gradient(140deg, #fef260 86%, #2f6bdd 90%);
 }
+.buttons a:first-child {
+  text-align: center;
+}
 .buttons a:last-child {
   background: white;
 }
@@ -116,7 +122,7 @@ article.text-container .btn:hover {
   border-radius: 13px;
   gap: 1rem;
   width: 313px;
-  padding-bottom: 0.5rem;
+  padding: 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -144,12 +150,14 @@ article.text-container .btn:hover {
   margin-left: 1.5rem;
   gap: 2rem;
 }
-/****** POSTS SECTION END ******/
-/* CSS FOR BUTTON IN MAIN SECTION  */
+/*************** POSTS SECTION END ********************/
+
+/******** CSS FOR BUTTON IN MAIN SECTION AT THE VERY END ********/
 button.active {
   display: none;
+  margin: 1.5rem auto;
 }
-/****** FOOTER SECTION START ******/
+/*************** FOOTER SECTION START ******************/
 footer {
   background-color: #123;
   padding: 5rem 0 2rem;
@@ -173,6 +181,7 @@ footer h1 {
 footer span {
   padding: 0.8rem;
   color: #a9a9a9;
+  cursor: pointer;
 }
 footer .icon-container {
   justify-content: center;
@@ -182,18 +191,18 @@ footer .icon-container {
 footer .icon-container a i {
   color: white;
 }
-/****** FOOTER SECTION END ******/
+/********** FOOTER SECTION END ****************/
 
-/* CSS FOR IPAD */
+/******** CSS FOR IPAD ********/
 @media (min-width: 768px) {
-  /* CSS FOR HEADER SECTION */
+  /******** CSS FOR HEADER SECTION ********/
   article.text-container {
     flex-direction: row;
   }
 
-  /* CSS FOR HEADER SECTION */
+  /******** CSS FOR HEADER SECTION ********/
 
-  /* CSS FOR POSTS SECTION */
+  /******** CSS FOR POSTS SECTION ********/
 
   .buttons {
     display: flex;
@@ -203,14 +212,14 @@ footer .icon-container a i {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
   }
-  /* CSS FOR POSTS SECTION */
+  /******** CSS FOR POSTS SECTION ********/
 
-  /* CSS FOR BUTTON IN MAIN SECTION  */
+  /******** CSS FOR BUTTON IN MAIN SECTION AT THE VERY END ********/
   button.active {
     display: block;
   }
 
-  /* FOOTER SECTION START */
+  /******** FOOTER SECTION START ********/
   footer div.container {
     flex-direction: row;
     width: 50%;
@@ -221,11 +230,11 @@ footer .icon-container a i {
     border-bottom: none;
   }
 
-  /* FOOTER SECTION END */
+  /******** FOOTER SECTION END ********/
 }
 
 @media (min-width: 1280px) {
-  /* CSS FOR POSTS SECTION */
+  /******** CSS FOR POSTS SECTION ********/
   .posts-container {
     flex-direction: row;
   }
@@ -237,8 +246,11 @@ footer .icon-container a i {
   .articles {
     grid-template-columns: 1fr 1fr 1fr;
   }
-
-  /* FOOTER SECTION START */
+  /******** CSS FOR BUTTON IN MAIN SECTION AT THE VERY END ********/
+  button.active {
+    display: none;
+  }
+  /******** FOOTER SECTION START ********/
   footer div.container {
     width: 100%;
   }

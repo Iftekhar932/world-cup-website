@@ -2,16 +2,17 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>World Cup</title>
     <!-- STYLESHEET -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <!-- FONT AWESOME CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <style>
         /* HEADER SECTION BUTTON */
         .hero button {
@@ -21,6 +22,7 @@
         /* POSTS SECTION BUTTON */
         .buttons a:first-child {
             background: white;
+            text-align: center;
         }
 
         .buttons a:last-child {
@@ -36,11 +38,17 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 1rem
+            gap: 1rem;
         }
 
         #matches .text-container p {
-            font-weight: 100
+            font-weight: 100;
+        }
+
+        /* CSS FOR BUTTON IN MAIN SECTION AT THE VERY END */
+        button.active {
+            display: none;
+            margin: 1.5rem auto;
         }
 
         /* FOOTER CSS */
@@ -50,7 +58,19 @@
         }
 
         footer .icon-container a i {
-            color: white
+            color: white;
+        }
+
+        @media (min-width: 768px) {
+            button.active {
+                display: block;
+            }
+
+            @media (min-width: 768px) {
+                button.active {
+                    display: block;
+                }
+            }
         }
     </style>
 </head>
@@ -78,6 +98,7 @@
         <!-- POSTS SECTION START -->
         <section id="matches">
             <article class="posts-container">
+
                 <div class="buttons">
                     <a class="btn" href="#"> Upcoming Match</a>
                     <a class="btn" href="#">All group</a>
@@ -89,176 +110,98 @@
                         <div class="match-time">
                             <span><img src="./assets/germany Flag.png" alt="" /></span>
                             <span>VS</span>
-                            <span><img src="./assets/Flag.png" alt=""></span>
+                            <span><img src="./assets/Flag.png" alt="" /></span>
                         </div>
                         <h3>Germany VS France</h3>
                         <p>April 01,2023,1.00 AM</p>
                     </article>
-
+                    <!-- ARTICLE START -->
                     <article class="text-container">
                         <div class="match-time">
                             <span><img src="./assets/germany Flag.png" alt="" /></span>
                             <span>VS</span>
-                            <span><img src="./assets/Flag.png" alt=""></span>
+                            <span><img src="./assets/Flag.png" alt="" /></span>
                         </div>
                         <h3>Germany VS France</h3>
                         <p>April 01,2023,1.00 AM</p>
                     </article>
-
+                    <!-- ARTICLE START -->
                     <article class="text-container">
                         <div class="match-time">
                             <span><img src="./assets/germany Flag.png" alt="" /></span>
                             <span>VS</span>
-                            <span><img src="./assets/Flag.png" alt=""></span>
+                            <span><img src="./assets/Flag.png" alt="" /></span>
                         </div>
                         <h3>Germany VS France</h3>
                         <p>April 01,2023,1.00 AM</p>
                     </article>
-
+                    <!-- ARTICLE START -->
                     <article class="text-container">
                         <div class="match-time">
                             <span><img src="./assets/germany Flag.png" alt="" /></span>
                             <span>VS</span>
-                            <span><img src="./assets/Flag.png" alt=""></span>
+                            <span><img src="./assets/Flag.png" alt="" /></span>
                         </div>
                         <h3>Germany VS France</h3>
                         <p>April 01,2023,1.00 AM</p>
                     </article>
-
+                    <!-- ARTICLE START -->
                     <article class="text-container">
                         <div class="match-time">
                             <span><img src="./assets/germany Flag.png" alt="" /></span>
                             <span>VS</span>
-                            <span><img src="./assets/Flag.png" alt=""></span>
+                            <span><img src="./assets/Flag.png" alt="" /></span>
                         </div>
                         <h3>Germany VS France</h3>
                         <p>April 01,2023,1.00 AM</p>
                     </article>
-
+                    <!-- ARTICLE START -->
                     <article class="text-container">
                         <div class="match-time">
                             <span><img src="./assets/germany Flag.png" alt="" /></span>
                             <span>VS</span>
-                            <span><img src="./assets/Flag.png" alt=""></span>
+                            <span><img src="./assets/Flag.png" alt="" /></span>
                         </div>
                         <h3>Germany VS France</h3>
                         <p>April 01,2023,1.00 AM</p>
                     </article>
-
+                    <!-- ARTICLE START -->
                     <article class="text-container">
                         <div class="match-time">
                             <span><img src="./assets/germany Flag.png" alt="" /></span>
                             <span>VS</span>
-                            <span><img src="./assets/Flag.png" alt=""></span>
+                            <span><img src="./assets/Flag.png" alt="" /></span>
                         </div>
                         <h3>Germany VS France</h3>
                         <p>April 01,2023,1.00 AM</p>
                     </article>
-
+                    <!-- ARTICLE START -->
                     <article class="text-container">
                         <div class="match-time">
                             <span><img src="./assets/germany Flag.png" alt="" /></span>
                             <span>VS</span>
-                            <span><img src="./assets/Flag.png" alt=""></span>
+                            <span><img src="./assets/Flag.png" alt="" /></span>
                         </div>
                         <h3>Germany VS France</h3>
                         <p>April 01,2023,1.00 AM</p>
                     </article>
-
+                    <!-- ARTICLE START -->
                     <article class="text-container">
                         <div class="match-time">
                             <span><img src="./assets/germany Flag.png" alt="" /></span>
                             <span>VS</span>
-                            <span><img src="./assets/Flag.png" alt=""></span>
+                            <span><img src="./assets/Flag.png" alt="" /></span>
                         </div>
                         <h3>Germany VS France</h3>
                         <p>April 01,2023,1.00 AM</p>
                     </article>
 
-                    <!--  <article class="text-container">
-                        <img src="./assets/Blog Image.png" alt="" />
-                        <button>Transfer</button>
-                        <p>Transfer Live: Chelsea in talks over kimpenbe transfer</p>
-                        <div class="icon-container">
-                            <span><i class="fas fa-clock"></i> 10h</span>
-                            <span><i class="fas fa-comments"></i> 23</span>
-                        </div>
-                    </article>
-
-                    <article class="text-container">
-                        <img src="./assets/Blog Image.png" alt="" />
-                        <button>Transfer</button>
-                        <p>Transfer Live: Chelsea in talks over kimpenbe transfer</p>
-                        <div class="icon-container">
-                            <span><i class="fas fa-clock"></i> 10h</span>
-                            <span><i class="fas fa-comments"></i> 23</span>
-                        </div>
-                    </article>
-
-                    <article class="text-container">
-                        <img src="./assets/Blog Image.png" alt="" />
-                        <button>Transfer</button>
-                        <p>Transfer Live: Chelsea in talks over kimpenbe transfer</p>
-                        <div class="icon-container">
-                            <span><i class="fas fa-clock"></i> 10h</span>
-                            <span><i class="fas fa-comments"></i> 23</span>
-                        </div>
-                    </article>
-
-                    <article class="text-container">
-                        <img src="./assets/Blog Image.png" alt="" />
-                        <button>Transfer</button>
-                        <p>Transfer Live: Chelsea in talks over kimpenbe transfer</p>
-                        <div class="icon-container">
-                            <span><i class="fas fa-clock"></i> 10h</span>
-                            <span><i class="fas fa-comments"></i> 23</span>
-                        </div>
-                    </article>
-
-                    <article class="text-container">
-                        <img src="./assets/Blog Image.png" alt="" />
-                        <button>Transfer</button>
-                        <p>Transfer Live: Chelsea in talks over kimpenbe transfer</p>
-                        <div class="icon-container">
-                            <span><i class="fas fa-clock"></i> 10h</span>
-                            <span><i class="fas fa-comments"></i> 23</span>
-                        </div>
-                    </article>
-
-                    <article class="text-container">
-                        <img src="./assets/Blog Image.png" alt="" />
-                        <button>Transfer</button>
-                        <p>Transfer Live: Chelsea in talks over kimpenbe transfer</p>
-                        <div class="icon-container">
-                            <span><i class="fas fa-clock"></i> 10h</span>
-                            <span><i class="fas fa-comments"></i> 23</span>
-                        </div>
-                    </article>
-
-                    <article class="text-container">
-                        <img src="./assets/Blog Image.png" alt="" />
-                        <button>Transfer</button>
-                        <p>Transfer Live: Chelsea in talks over kimpenbe transfer</p>
-                        <div class="icon-container">
-                            <span><i class="fas fa-clock"></i> 10h</span>
-                            <span><i class="fas fa-comments"></i> 23</span>
-                        </div>
-                    </article>
-
-                    <article class="text-container">
-                        <img src="./assets/Blog Image.png" alt="" />
-                        <button>Transfer</button>
-                        <p>Transfer Live: Chelsea in talks over kimpenbe transfer</p>
-                        <div class="icon-container">
-                            <span><i class="fas fa-clock"></i> 10h</span>
-                            <span><i class="fas fa-comments"></i> 23</span>
-                        </div>
-                    </article> -->
                 </article>
             </article>
         </section>
         <!-- POSTS SECTION END-->
-        <button class="active">View All</button>
+        <!-- VIEW ALL BUTTON -->
+        <button class="active btn">View All</button>
     </main>
     <!-- MAIN END -->
 
@@ -266,11 +209,17 @@
     <footer id="footer">
         <h1>Goal</h1>
         <div class="container">
-            <span>Contact Us</span><span>Terms of Services</span><span>Privacy Policy</span><span>Privacy
-                Settings</span><span>Goal App</span><span>Goal Live</span>
+            <span>Contact Us</span>
+            <span>Terms of Services</span>
+            <span>Privacy Policy</span>
+            <span>Privacy Settings</span>
+            <span>Goal App</span>
+            <span>Goal Live</span>
         </div>
+        <!-- ICONS -->
         <div class="icon-container">
-            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i> </a>
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i>
+            </a>
             <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
             <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
         </div>
