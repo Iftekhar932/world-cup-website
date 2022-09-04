@@ -174,7 +174,14 @@ footer span {
   padding: 0.8rem;
   color: #a9a9a9;
 }
+footer .icon-container {
+  justify-content: center;
+  align-items: center;
+}
 
+footer .icon-container a i {
+  color: white;
+}
 /****** FOOTER SECTION END ******/
 
 /* CSS FOR IPAD */
@@ -213,6 +220,7 @@ footer span {
   footer h1 {
     border-bottom: none;
   }
+
   /* FOOTER SECTION END */
 }
 
