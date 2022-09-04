@@ -181,12 +181,18 @@ footer h1 {
 footer span {
   padding: 0.8rem;
   color: #a9a9a9;
+  border-bottom: 1px solid transparent;
   cursor: pointer;
+}
+footer span:hover {
+  border-bottom: 1px solid #a9a9a9;
+  transition: 1s;
 }
 footer .icon-container {
   justify-content: center;
   align-items: center;
   margin: 0;
+  padding: 0.2rem;
 }
 
 footer .icon-container a i {
